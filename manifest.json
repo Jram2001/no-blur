@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "No Blur",
+  "version": "1.0",
+  "description": "Removes blur and backdrop-blur effects from every page.",
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "run_at": "document_start",
+    "all_frames": true
+  }]
+}
